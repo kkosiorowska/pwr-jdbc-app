@@ -71,7 +71,7 @@ public class DBConnection {
 
         try
         {
-            String create = "create table simpletable (id int, text char(20)) ";
+            String create = "create table PRODUCTS (id int, text char(20)) ";
             stmt.executeUpdate(create);
         }
         catch (SQLException e)
