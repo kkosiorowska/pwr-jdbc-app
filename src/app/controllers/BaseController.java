@@ -14,8 +14,9 @@ import java.util.ResourceBundle;
 public class BaseController implements Initializable {
 
     public void changeScene(String view, MouseEvent mouseEvent) throws IOException {
+
         Stage stageTheEventSourceNodeBelongs = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("app/views/" + view + ".fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../views/"+ view + ".fxml"));
         stageTheEventSourceNodeBelongs.setScene(new Scene(fxmlLoader.load()));
     }
 
