@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.MenuController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="666.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/background.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnProducts" layoutX="209.0" layoutY="128.0" mnemonicParsing="false" onMouseClicked="#btnProductsClicked" prefHeight="46.0" prefWidth="184.0" style="-fx-background-color: ffffff;" text="Products" />
+      <Button fx:id="btnDepartments" layoutX="208.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#btnDepartmentsClicked" prefHeight="46.0" prefWidth="184.0" style="-fx-background-color: ffffff;" text="Departments" />
+   </children>
+</AnchorPane>

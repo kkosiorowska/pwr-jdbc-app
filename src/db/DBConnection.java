@@ -117,22 +117,22 @@ public class DBConnection {
 
     public static void main(String[] args)
     {
-        DBConnection table = new DBConnection();
-        table.connect("db", "root", "");
-
-        System.out.println("after connect");
-
-        table.drop();
-        System.out.println("after drop");
-
-        table.create();
-        System.out.println("after create");
-
-        table.addNewTable();
-        table.insert();
-        System.out.println("after insert");
-
-        table.disconnect();
-        System.out.println("after disconnect");
+//        DBConnection table = new DBConnection();
+//        table.connect("db", "root", "");
+//
+//        System.out.println("after connect");
+//
+//        table.drop();
+//        System.out.println("after drop");
+//
+//        table.create();
+//        System.out.println("after create");
+//
+//        table.addNewTable();
+//        table.insert();
+//        System.out.println("after insert");
+//
+//        table.disconnect();
+//        System.out.println("after disconnect");
     }
 }
