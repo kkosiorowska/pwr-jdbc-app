@@ -1,33 +1,37 @@
 package app.Models;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
-
-@XmlRootElement
-@XmlAccessorType(XmlAccessType.FIELD)
 public class Department {
 
-    @XmlTransient
     private int id;
+    private String name;
 
-    public int getId() {
-        return id;
+    public Department(String name) {
+        this.name = name;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public Department() {
     }
 
     public String getName() {
         return name;
     }
 
+    //@XmlElement
     public void setName(String name) {
         this.name = name;
     }
 
-    private String name;
+    public int getId() {
+        return id;
+    }
 
+    //@XmlAttribute
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    @Override
+    public String toString(){
+        return getName();
+    }
 }

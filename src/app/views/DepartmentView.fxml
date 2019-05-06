@@ -15,7 +15,7 @@
                 <Image url="@../../images/background.jpg" />
             </image>
         </ImageView>
-        <ListView layoutX="104.0" layoutY="88.0" prefHeight="225.0" prefWidth="392.0" />
+        <ListView fx:id="listDepartments" layoutX="104.0" layoutY="88.0" prefHeight="225.0" prefWidth="392.0" />
         <Button layoutX="496.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#btnBackClicked" prefHeight="31.0" prefWidth="86.0" style="-fx-background-color: ffffff;" text="Back" />
         <Button layoutX="136.0" layoutY="346.0" mnemonicParsing="false" onMouseClicked="#btnAddClicked" prefHeight="31.0" prefWidth="110.0" style="-fx-background-color: ffffff;" text="Add" />
         <Button layoutX="326.0" layoutY="346.0" mnemonicParsing="false" onMouseClicked="#btnUpdateClicked" prefHeight="31.0" prefWidth="110.0" style="-fx-background-color: ffffff;" text="Update" />

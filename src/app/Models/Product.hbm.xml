@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="app.Models">
+
+    <class name="Product" table="products">
+        <id name="id" column="idProducts">
+            <generator class="native"/>
+        </id>
+        <property name="idDep" column="idDepertments"/>
+        <!--<property name="nameDep" column="nameDep"/>-->
+        <property name="name" column="name"/>
+        <property name="quantity" column="quantity"/>
+        <property name="price" column="price"/>
+    </class>
+
+</hibernate-mapping>

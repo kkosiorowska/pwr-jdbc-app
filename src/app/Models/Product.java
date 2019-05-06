@@ -1,19 +1,26 @@
 package app.Models;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
-
-@XmlRootElement
-@XmlAccessorType(XmlAccessType.FIELD)
 public class Product {
 
-    @XmlTransient
     private int id;
-    private int idDepertments;
-    private String name;
+    private int idDep;
     private int quantity;
+    private double price;
+    private String name;
+
+//    public String getNameDep() {
+//        return nameDep;
+//    }
+//
+//    public void setNameDep(String nameDep) {
+//        this.nameDep = nameDep;
+//    }
+
+    //private String nameDep;
+
+    public Product() {
+
+    }
 
     public int getId() {
         return id;
@@ -23,12 +30,12 @@ public class Product {
         this.id = id;
     }
 
-    public int getIdDepertments() {
-        return idDepertments;
+    public int getIdDep() {
+        return idDep;
     }
 
-    public void setIdDepertments(int idDepertments) {
-        this.idDepertments = idDepertments;
+    public void setIdDep(int idDep) {
+        this.idDep = idDep;
     }
 
     public String getName() {
@@ -55,9 +62,18 @@ public class Product {
         this.price = price;
     }
 
-    private double price;
-
-    public Product() {}
-
-
+    public Product(int id, int idDep, String name, int quantity, double price) {
+        this.id = id;
+        this.idDep = idDep;
+        this.name = name;
+        this.quantity = quantity;
+        this.price = price;
+    }
+    public Product(int idDep, String name, int quantity, double price) {
+        this.id = id;
+        this.idDep = idDep;
+        this.name = name;
+        this.quantity = quantity;
+        this.price = price;
+    }
 }
